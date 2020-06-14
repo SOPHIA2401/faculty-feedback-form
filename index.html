@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <title>Faculty Feedback Form</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 text-center my-4">
+                    <h1>PANJAB UNIVERSITY, CHANDIGARH</h1> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card ">
+                    <h3 class="card-header bg-primary text-white text-center"><strong>Faculty Feedback-form</strong></h3>
+                    <div class="card-body">
+                        <form>
+                            <!-- Faculty and Course details -->
+                            <div class="row form-group font-weight-bold">
+                                <label class="col-4 col-md-2 col-form-label" for="teacherName">Name of Teacher</label>
+                                <input class="col-8 col-md-3 form-control" id="teacherName" placeholder="Teacher's Name"> 
+                                <label class="col-4 col-md-2 offset-md-1 col-form-label" for="department">Department</label>
+                                <input class="col-8 col-md-3 form-control" id="department" placeholder="Uiet">                               
+                            </div>
+                            <div class="row form-group font-weight-bold">
+                                <label class="col-4 col-md-2 col-form-label" for="courseCode">Course Code</label>
+                                <input class="col-8 col-md-3 form-control" id="courseCode" placeholder="CSXXX"> 
+                                <label class="col-4 col-md-2 offset-md-1 col-form-label" for="courseTitle">Course Title</label>
+                                <input class="col-8 col-md-3 form-control" id="courseTitle" placeholder="Name of Subject">                               
+                            </div>
+                            <div class="row form-group font-weight-bold">
+                                <label class="col-4 col-md-2 col-form-label" for="semester">Semester</label>
+                                <input class="col-8 col-md-3 form-control" id="semester" placeholder="1st/2nd/">                               
+                            </div>
+
+                            <!-- Questions related to cirriculam -->
+                            <h2>Please evaluate honestly<font color="red">*</font></h2>
+                            <ol type="1.">
+                                <li>
+                                    <label for="ques1" class="col-12 col-form-label font-weight-bold">Course content:</label>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques1option1" name="ques1">
+                                            <label class="form-check-label" for="option1">can be covered in one semester</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques1option2" name="ques1">
+                                            <label class="form-check-label" for="option2">Too much to be adequately covered in one semester</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques1option3" name="ques1">
+                                            <label class="form-check-label" for="option3">Not enough for one semester</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques1option4" name="ques1">
+                                            <label class="form-check-label" for="option4">Difficult to comment</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="ques2" class="col-12 col-form-label font-weight-bold">Relevance of the course in the overall structure of program:</label>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques2option1" name="ques2">
+                                            <label class="form-check-label" for="option1">Very relevant</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques2option2" name="ques2">
+                                            <label class="form-check-label" for="option2">not at all relevent</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques2option3" name="ques2">
+                                            <label class="form-check-label" for="option3">Reasonably relevant</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques2option4" name="ques2">
+                                            <label class="form-check-label" for="option4">Difficult to comment</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="ques3" class="col-12 col-form-label font-weight-bold">Overlap with other courses:</label>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques3option1" name="ques3">
+                                            <label class="form-check-label" for="option1">No overlap</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques3option2" name="ques3">
+                                            <label class="form-check-label" for="option2">Repetition of several topics</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques3option3" name="ques3">
+                                            <label class="form-check-label" for="option3">Some overlap</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques3option4" name="ques3">
+                                            <label class="form-check-label" for="option4">Difficult to comment</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="ques4" class="col-12 col-form-label font-weight-bold">Recommended Reading material was:</label>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques4option1" name="ques4">
+                                            <label class="form-check-label" for="option1">Adequate and relevant</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques4option2" name="ques4">
+                                            <label class="form-check-label" for="option2">mostly inadequate</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques4option3" name="ques4">
+                                            <label class="form-check-label" for="option3"> To some extent adequate and relevant</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques4option4" name="ques4">
+                                            <label class="form-check-label" for="option4">Cannot comment</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="ques5" class="col-12 col-form-label font-weight-bold">Class tests/ mid-semester tests were conducted:</label>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques5option1" name="ques5">
+                                            <label class="form-check-label" for="option1">As per schedule and satisfactorily</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques5option2" name="ques5">
+                                            <label class="form-check-label" for="option2">In an unsatifactory manner</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques5option3" name="ques5">
+                                            <label class="form-check-label" for="option3">Never</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques5option4" name="ques5">
+                                            <label class="form-check-label" for="option4">But were inadequate</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="ques6" class="col-12 col-form-label font-weight-bold">The tests/mid-term tests were:</label>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques6option1" name="ques6">
+                                            <label class="form-check-label" for="option1">Difficult</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques6option2" name="ques6">
+                                            <label class="form-check-label" for="option2">Balanced</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-1">
+                                            <input type="radio" class="form-check-input" id="ques6option3" name="ques6">
+                                            <label class="form-check-label" for="option3">Easy</label>
+                                        </div>
+                                        <div class="form-check col-10 offset-1 col-md-5 offset-md-0">
+                                            <input type="radio" class="form-check-input" id="ques6option4" name="ques6">
+                                            <label class="form-check-label" for="option4">Out of syllabus</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                             
+                            <!-- Table format evalutaion -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead class=" thead-dark text-center">
+                                                <tr>
+                                                    <th>&nbsp;</th>
+                                                    <th class="align-middle">strongly disagree</th>
+                                                    <th class="align-middle">disagree</th>
+                                                    <th class="align-middle">neither agree nor disagree</th>
+                                                    <th class="align-middle">agree</th>
+                                                    <th class="align-middle">strongly agree</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-center">
+                                                <tr>
+                                                    <th>The teacher completes the entire syllabus in time</th>
+                                                    <td><input type="radio" name="a" value="1" required></td>
+	                                                <td><input type="radio" name="a" value="2" required></td>
+	                                                <td><input type="radio" name="a" value="3" required></td>
+	                                                <td><input type="radio" name="a" value="4" required></td>
+	                                                <td><input type="radio" name="a" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The teacher has subject knowledge</th>
+                                                    <td><input type="radio" name="b" value="1" required></td>
+                                                    <td><input type="radio" name="b" value="2" required></td>
+                                                    <td><input type="radio" name="b" value="3" required></td>
+                                                    <td><input type="radio" name="b" value="4" required></td>
+                                                    <td><input type="radio" name="b" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The teacher communicates clearly and inspires me by his/her teaching</th>
+                                                    <td><input type="radio" name="c" value="1" required></td>
+                                                    <td><input type="radio" name="c" value="2" required></td>
+                                                    <td><input type="radio" name="c" value="3" required></td>
+                                                    <td><input type="radio" name="c" value="4" required></td>
+                                                    <td><input type="radio" name="c" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>the teacher is punctual in the class</th>
+                                                    <td><input type="radio" name="d" value="1" required></td>
+                                                    <td><input type="radio" name="d" value="2" required></td>
+                                                    <td><input type="radio" name="d" value="3" required></td>
+                                                    <td><input type="radio" name="d" value="4" required></td>
+                                                    <td><input type="radio" name="d" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The teacher comes well prepared for the class</th>
+                                                    <td><input type="radio" name="e" value="1" required></td>
+                                                    <td><input type="radio" name="e" value="2" required></td>
+                                                    <td><input type="radio" name="e" value="3" required></td>
+                                                    <td><input type="radio" name="e" value="4" required></td>
+                                                    <td><input type="radio" name="e" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The teacher encourages paticipation and discussion in class</th>
+                                                    <td><input type="radio" name="f" value="1" required></td>
+                                                    <td><input type="radio" name="f" value="2" required></td>
+                                                    <td><input type="radio" name="f" value="3" required></td>
+                                                    <td><input type="radio" name="f" value="4" required></td>
+                                                    <td><input type="radio" name="f" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The teacher uses teaching aids, handouts, gives suitable references, make presentations and conducts seminars/tutorials, etc</th>
+                                                    <td><input type="radio" name="g" value="1" required></td>
+                                                    <td><input type="radio" name="g" value="2" required></td>
+                                                    <td><input type="radio" name="g" value="3" required></td>
+                                                    <td><input type="radio" name="g" value="4" required></td>
+                                                    <td><input type="radio" name="g" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The teacher's attitude towards student is friendly & helpful </th>
+                                                    <td><input type="radio" name="h" value="1" required></td>
+                                                    <td><input type="radio" name="h" value="2" required></td>
+                                                    <td><input type="radio" name="h" value="3" required></td>
+                                                    <td><input type="radio" name="h" value="4" required></td>
+                                                    <td><input type="radio" name="h" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The teacher is aviable and accessible in the Department </th>
+                                                    <td><input type="radio" name="i" value="1" required></td>
+                                                    <td><input type="radio" name="i" value="2" required></td>
+                                                    <td><input type="radio" name="i" value="3" required></td>
+                                                    <td><input type="radio" name="i" value="4" required></td>
+                                                    <td><input type="radio" name="i" value="5" required></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>The evaluation process is fair and unbiased</th>
+                                                    <td><input type="radio" name="j"  value="1" required></td>
+                                                    <td><input type="radio" name="j"   value="2" required></td>
+                                                    <td><input type="radio" name="j"  value="3" required></td>
+                                                    <td><input type="radio" name="j" r value="4"equired></td>
+                                                    <td><input type="radio" name="j" r value="5" equired></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feedback or suggestions -->
+                            <div class="form-group row font-weight-bold">
+                                <label for="curriculum" class="col-12 col-md-4 col-form-label align-middle">comments/ suggestions for improvements of curriculum</label>
+                                <div class="col-12 col-md-8">
+                                    <textarea class="form-control" id="curriculum" rows="3"></textarea>
+                                </div> 
+                            </div>
+                            <div class="form-group row font-weight-bold">
+                                <label for="teacher" class="col-12 col-md-4 col-form-label align-middle">comments/ suggestions for teacher</label>
+                                <div class="col-12 col-md-8">
+                                    <textarea class="form-control" id="teacher" rows="3"></textarea>
+                                </div> 
+                            </div>
+
+                            <!-- submitting the form -->
+                            <div class="row">
+                                <button type="submit" class="offset-3 offset-md-4 btn btn-success btn-lg ">Submit feedback</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="row bg-dark mt-4 py-3">
+            <h5 class="col-12 text-center text-white">© Copyright 2020 University Institute of Engineering &amp; Technology</h5>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

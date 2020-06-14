@@ -1,0 +1,32 @@
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+h1{
+    font-style: italic;
+    text-shadow:5px 2px 5px grey;
+    font-size: 360%;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+tbody th{
+    text-align:left;
+}
+.font-weight-bold{
+    font-size:18px;
+}
+.card{
+    box-shadow: -10px -5px 20px grey;
+    outline: none;
+}
+.card-body{
+    border: solid 4px;
+    border-top:none;
+    outline: none;
+}
+.card-header{
+    border: solid 4px #62a9f5;
+    border-bottom:none;
+    font-size: 300%;
+}
