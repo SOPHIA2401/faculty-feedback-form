@@ -17,13 +17,11 @@ tbody th{
     font-size:18px;
 }
 .card{
-    box-shadow: -10px -5px 20px grey;
-    outline: none;
+  box-shadow: -2px -2px 20px 10px grey;
 }
 .card-body{
     border: solid 4px;
     border-top:none;
-    outline: none;
 }
 .card-header{
     border: solid 4px #62a9f5;
